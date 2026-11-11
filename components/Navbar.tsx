@@ -13,6 +13,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { label: "Beranda", href: "#beranda", sectionId: "beranda" },
   { label: "Tentang Project", href: "#tentang-project", sectionId: "tentang-project" },
+  { label: "Persona & Wilayah", href: "#target-persona", sectionId: "target-persona" },
   { label: "Fitur Unggulan", href: "#fitur-unggulan", sectionId: "fitur-unggulan" },
   { label: "Teknologi", href: "#teknologi", sectionId: "teknologi" },
 ];
@@ -82,7 +83,7 @@ export default function Navbar() {
 
         {/* Center: Desktop Navigation */}
         <nav aria-label="Navigasi Utama" className="hidden lg:block">
-          <ul className="flex items-center gap-8 xl:gap-10">
+          <ul className="flex items-center gap-6 xl:gap-8">
             {NAV_ITEMS.map((item) => {
               const isActive = activeSection === item.sectionId;
               return (

@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 const COL_2_LINKS = [
   { label: "Beranda", href: "#beranda" },
   { label: "Tentang Project", href: "#tentang-project" },
+  { label: "Persona & Wilayah", href: "#target-persona" },
   { label: "Preview Website", href: "#preview-website" },
 ];
 
