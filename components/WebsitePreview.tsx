@@ -52,6 +52,18 @@ const PREVIEW_SCREENS: PreviewScreen[] = [
     caption:
       "Memberikan panduan langkah darurat yang tenang, sistematis, serta edukasi persiapan keselamatan di alam.",
   },
+  {
+    id: "aiplo",
+    tabLabel: "Asisten AI (Aiplo)",
+    title: "Asisten AI EksploTrip (Aiplo)",
+    urlPath: "eksplotrip.vercel.app",
+    fullUrl: "https://eksplotrip.vercel.app/",
+    imageSrc: "/images/screenshots/preview-aiplo-modal.webp",
+    imageAlt:
+      "Tampilan dialog Asisten AI EksploTrip (Aiplo) yang siap melayani pertanyaan seputar destinasi terverifikasi selama 24 jam",
+    caption:
+      "Layanan AI Chat Bot 24 jam yang siap menjawab pertanyaan dan merekomendasikan destinasi wisata terverifikasi.",
+  },
 ];
 
 export default function WebsitePreview() {
@@ -183,8 +195,8 @@ export default function WebsitePreview() {
           </figcaption>
         </figure>
 
-        {/* Three Desktop Mockup Overview Cards (All 3 Required Pages Always Visible) */}
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        {/* Desktop Mockup Overview Cards */}
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {PREVIEW_SCREENS.map((screen) => {
             const isSelected = screen.id === activeScreen.id;
             return (
@@ -215,7 +227,7 @@ export default function WebsitePreview() {
                     alt={`Pratinjau ringkas ${screen.title}`}
                     width={2160}
                     height={1350}
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
                   />
                 </div>
