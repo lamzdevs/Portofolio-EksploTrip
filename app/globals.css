@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-success: #8abc43;
+  --color-bg-base: #f4f4f4;
+  --color-text-highlight: #568942;
+  --color-footer-bg: #375e27;
+  --color-primary: #32aac6;
+  --color-primary-hover: #2b7983;
+  --color-logo-yellow: #f4b72e;
+  --color-logo-orange: #fb772a;
+  --color-text-main: #040811;
+  --color-card-bg: #ffffff;
+  --color-text-muted: #444444;
+  --shadow-card: 0px 0px 10px rgba(4, 8, 17, 0.25);
+  --shadow-button: 0px 4px 12px rgba(50, 170, 198, 0.35);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-base);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    font-family: var(--font-poppins), "Poppins", sans-serif;
+    color: var(--color-text-main);
+    background-color: var(--color-bg-base);
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-[50px];
+  }
+}
